@@ -79,4 +79,81 @@ class PerfectSquareUtilTest extends Specification{
         then:
         result== 2
     }
+
+    def 'Test PerfectSquareUtil | numSquaresDp() | number is 0'(){
+        given:
+        def obj= new PerfectSquareUtil()
+
+        when:
+        def result= obj.numSquaresDp(0)
+
+        then:
+        result== 0
+    }
+
+    def 'Test PerfectSquareUtil | numSquaresDp() | number is 1'(){
+        given:
+        def obj= new PerfectSquareUtil()
+
+        when:
+        def result= obj.numSquaresDp(1)
+
+        then:
+        result== 1
+    }
+
+    def 'Test PerfectSquareUtil | numSquaresDp() | number is 3'(){
+        given:
+        def obj= new PerfectSquareUtil()
+
+        when:
+        def result= obj.numSquaresDp(3)
+
+        then:
+        result== 3
+    }
+
+    def 'Test PerfectSquareUtil | numSquaresDp() | number is 5'(){
+        given:
+        def obj= new PerfectSquareUtil()
+
+        when:
+        def result= obj.numSquaresDp(5)
+
+        then:
+        result== 2
+    }
+
+    def 'Test PerfectSquareUtil | numSquaresDp() | number is 12'(){
+        given:
+        def obj= new PerfectSquareUtil()
+
+        when:
+        def result= obj.numSquaresDp(12)
+
+        then:
+        result== 3
+    }
+
+    def 'Test PerfectSquareUtil | numSquaresDp() | number is 25'(){
+        given:
+        def obj= new PerfectSquareUtil()
+
+        when:
+        def result= obj.numSquaresDp(25)
+
+        then:
+        result== 1
+    }
+
+    def 'Test PerfectSquareUtil | numSquaresDp() | number is 13'(){
+        given:
+        def obj= new PerfectSquareUtil()
+
+        when:
+        def result= obj.numSquaresDp(13)
+
+        then:
+        result== 2
+    }
 }
